@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - exampledb@localhost" uuid="68382b7a-564e-4800-a38d-ac64cb0db95b">
+    <database-info product="MySQL" version="5.6.15" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="exampledb"/>
+      <table id="2" parent="1" name="customers"/>
+      <table id="3" parent="1" name="tb_user"/>
+      <column id="4" parent="2" name="CustomerID">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="5" parent="2" name="CompanyName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="6" parent="2" name="ContactName">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="7" parent="2" name="ContactTitle">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="8" parent="2" name="Address">
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="9" parent="2" name="City">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="10" parent="2" name="Region">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="11" parent="2" name="PostalCode">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="12" parent="2" name="Country">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="13" parent="2" name="Phone">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="14" parent="2" name="Fax">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
+        <columns>CustomerID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="16" parent="3" name="user_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="17" parent="3" name="username">
+        <data-type>varchar(99)</data-type>
+      </column>
+      <column id="18" parent="3" name="pwd">
+        <data-type>varchar(99)</data-type>
+      </column>
+      <key id="19" parent="3" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
